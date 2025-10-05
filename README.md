@@ -2,7 +2,7 @@
 
 Un système de programmation génétique (GP) pour l'apprentissage automatique de fonctions mathématiques, implémenté en Python avec une interface graphique PyQt5.
 
-## 📋 Description
+## Description
 
 Ce projet implémente un algorithme de programmation génétique capable de :
 - Découvrir des fonctions mathématiques à partir de données d'entrée/sortie
@@ -10,7 +10,7 @@ Ce projet implémente un algorithme de programmation génétique capable de :
 - Fournir une interface graphique interactive pour configurer et visualiser les résultats
 - Exporter les résultats sous différents formats
 
-## 🚀 Fonctionnalités
+## Fonctionnalités
 
 - **Multiples modes d'exécution** : dialogue interactif, ligne de commande, batch
 - **Support multi-dimensionnel** : fonctions à 1D, 2D et n-dimensions
@@ -18,7 +18,7 @@ Ce projet implémente un algorithme de programmation génétique capable de :
 - **Algorithmes évolutifs avancés** : sélection, croisement, mutation configurables
 - **Visualisation** : arbres d'expression, courbes de fitness, surfaces 3D
 
-## 🛠️ Installation
+## Installation
 
 ### Prérequis
 - Python 3.7+
@@ -36,7 +36,7 @@ PyQt5
 NumPy
 Matplotlib
 
-🎯 Utilisation
+Utilisation
 Mode Interface Graphique (Recommandé)
 python main.py -mode "dialogue"
 
@@ -54,7 +54,7 @@ python main.py -mode "2d" -f "sin(x)*x**2+cos(x)*y**2" -xmin 1 -xmax 2 -ymin 1 -
 # Mode batch avec itérations
 python main.py -mode "iterate" -f "x**2+x*sin(x)" -xmin 0 -xmax 10 -s 123 -iter_field size_depth -iter_min 4 -iter_max 11 -iter_step 1 -out "data/output_profondeur_4_10.csv" -v
 
-📁 Structure du Projet
+Structure du Projet
 ├── main.py                 # Point d'entrée principal
 ├── mainGP.py              # Classe principale de gestion
 ├── algo/                  # Algorithmes génétiques
@@ -74,7 +74,7 @@ python main.py -mode "iterate" -f "x**2+x*sin(x)" -xmin 0 -xmax 10 -s 123 -iter_
 └── data/                  # Données et résultats
 
 
-⚙️ Configuration
+Configuration
 Paramètres Principaux
 size_population : Taille de la population (défaut: 200)
 max_depth : Profondeur maximale des arbres (défaut: 5)
@@ -88,7 +88,7 @@ Croisement : middle, absorption partielle/totale
 Mutation : replace, swap, déplace
 Remplacement : mixt_best, child_only, child_add, mixt_rand
 
-📊 Résultats et Visualisation
+Résultats et Visualisation
 Le système génère :
 Formules mathématiques simplifiées
 Graphes de convergence de la fitness
@@ -96,7 +96,7 @@ Arbres d'expression génétique
 Comparaisons visuelles fonctions cible vs apprises
 Export CSV des résultats
 
-🧪 Exemples
+Exemples
 Fonction 1D
 python main.py -mode "run" -f "x**2 + sin(x)" -xmin -5 -xmax 5
 
@@ -106,7 +106,7 @@ python main.py -mode "2d" -f "x**2 + y**2" -xmin -1 -xmax 1 -ymin -1 -ymax 1
 Benchmarking
 python main.py -mode "iterate" -f "x**3 - 2*x + 1" -iter_field max_depth -iter_min 3 -iter_max 8 -out "benchmark.csv"
 
-🔧 Développement
+Développement
 Architecture
 AlgoGP : Cœur algorithmique de la GP
 ChromosomeGP : Représentation des solutions
@@ -120,11 +120,4 @@ self.functions = {
     # ...
 }
 
-Ce README fournit une documentation complète couvrant :
-- L'installation et les prérequis
-- Tous les modes d'utilisation
-- La structure du code
-- Les paramètres de configuration
-- Des exemples d'utilisation
-- Des informations pour les contributeurs
 
